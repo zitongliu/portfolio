@@ -1,0 +1,37 @@
+.fullwidth-intro {
+  background-color: #ffc600;
+  min-height: 100vh;
+}
+
+.about {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.experience {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.projects {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.contact {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
+  background-color: #262626;
+}
+
+.light {
+  color: #262626;
+}
+
+.dark {
+  color: white;
+}
