@@ -1,6 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 .fullwidth-intro {
   background-color: #ffc600;
   min-height: 100vh;
+  color: white;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.fullwidth-intro h1 {
+  font-size: 4em;
+}
+
+.skills {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
 }
 
 .about {
@@ -16,6 +33,12 @@
 }
 
 .projects {
+  padding-top: 12vh;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.education {
   padding-top: 12vh;
   text-align: center;
   min-height: 80vh;
