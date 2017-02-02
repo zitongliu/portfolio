@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  position: relative;
+
 }
 
 hr {
@@ -33,7 +35,7 @@ hr {
   min-height: 100vh;
   color: white;
   text-align: center;
-  padding-top: 45vh;
+  padding-top: 32vh;
 }
 
 .fullwidth-intro h1 {
@@ -62,11 +64,26 @@ hr {
   color: white;
 }
 
+.about {
+  padding-top: 20vh;
+  text-align: center;
+  min-height: 110vh;
+  background-color: #ffc600;
+}
+
+.about-card {
+  background-color: white;
+  padding: 3em;
+  border: 1px solid gainsboro;
+}
+
+
 .skills {
-  padding-top: 12vh;
+  padding-top: 20vh;
   text-align: center;
   min-height: 80vh;
-
+  color: white;
+  background-color: #262626;
 }
 
 .skills li {
@@ -74,11 +91,6 @@ hr {
   list-style: none;
 }
 
-.about {
-  padding-top: 12vh;
-  text-align: center;
-  min-height: 80vh;
-}
 
 .avatar {
   border-radius:50%;
@@ -87,9 +99,11 @@ hr {
 }
 
 .experience {
-  padding-top: 12vh;
+
+  padding-top: 20vh;
   text-align: center;
   min-height: 80vh;
+
 }
 
 .experience h2 {
@@ -155,4 +169,31 @@ hr {
 
 .dark {
   color: white;
+}
+
+.bcg-parallax {
+  padding: 150px 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.bcg {
+  background: url('http://www.mrwallpaper.com/wallpapers/Sunset-Art-Background-1920x1080.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+  z-index: 2;
 }

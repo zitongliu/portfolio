@@ -16,3 +16,27 @@ $(function(){
 
     });
 });
+
+$(document).ready(function(){
+  // Init ScrollMagic
+  var controller = new ScrollMagic.Controller();
+
+  // Intr
+  var pinIntroScene = new ScrollMagic.Scene({
+    triggerElement: '.fullwidth-intro',
+    triggerHook: 0,
+    duration: '10%'
+  })
+  .setPin('.fullwidth-intro', {pushFollowers: false})
+  .addTo(controller);
+
+  // parallax scene
+  var slideParallaxScene = new ScrollMagic.Scene({
+    triggerElement: '.bcg-parallax',
+    triggerHook: 1,
+    duration: '100%'
+  })
+  .setTween(TweenMax.from('.bcg',1, {y: '-30%', ease:Power0.easeNone}))
+  .addTo(controller);
+
+});
