@@ -35,7 +35,7 @@ hr {
   min-height: 100vh;
   color: white;
   text-align: center;
-  padding-top: 32vh;
+  padding-top: 42vh;
 }
 
 .fullwidth-intro h1 {
@@ -68,13 +68,29 @@ hr {
   padding-top: 20vh;
   text-align: center;
   min-height: 110vh;
-  background-color: #ffc600;
+  background-color: #262626;
 }
 
 .about-card {
   background-color: white;
   padding: 3em;
   border: 1px solid gainsboro;
+  opacity: 0;
+  transition: 2s;
+  right: 100%;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  -moz-animation: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.transition-about-card {
+  opacity: 1;
+  right: 0%;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  -moz-animation: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 
@@ -83,7 +99,7 @@ hr {
   text-align: center;
   min-height: 80vh;
   color: white;
-  background-color: #262626;
+  background-color: #ffc600;
 }
 
 .skills li {
@@ -142,6 +158,15 @@ hr {
   margin-left: 1%
 }
 
+#ticTacThrones {
+  padding: 50vh 0;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
 .education {
   padding-top: 12vh;
   text-align: center;
@@ -180,6 +205,16 @@ hr {
   overflow: hidden;
 }
 .bcg {
+  background: url('http://www.mrwallpaper.com/wallpapers/Sunset-Art-Background-1920x1080.jpg') no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+.ticTacThrones-bcg {
   background: url('http://www.mrwallpaper.com/wallpapers/Sunset-Art-Background-1920x1080.jpg') no-repeat;
   background-size: cover;
   position: absolute;

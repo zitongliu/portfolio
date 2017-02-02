@@ -21,22 +21,42 @@ $(document).ready(function(){
   // Init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
-  // Intr
-  var pinIntroScene = new ScrollMagic.Scene({
-    triggerElement: '.fullwidth-intro',
-    triggerHook: 0,
-    duration: '10%'
-  })
-  .setPin('.fullwidth-intro', {pushFollowers: false})
-  .addTo(controller);
+  // // Intro
+  // var pinIntroScene = new ScrollMagic.Scene({
+  //   triggerElement: '.fullwidth-intro',
+  //   triggerHook: 0,
+  //   duration: '10%'
+  // })
+  // .setPin('.fullwidth-intro', {pushFollowers: false})
+  // .addIndicators({
+  //
+  // })
+  // .addTo(controller);
+
+  // About card
+  // build a scene
+var ourScene = new ScrollMagic.Scene({
+  triggerElement: '#about',
+  // duration: '90%',
+  triggerHook: 0.3
+})
+.setClassToggle('.about-card', 'transition-about-card') // add class to project01
+.addIndicators({
+  name: 'About Transition',
+  colorTrigger: 'black',
+  colorStart: '#75C695',
+  colorEnd: 'pink'
+}) // this requires a plugin
+.addTo(controller);
+
 
   // parallax scene
   var slideParallaxScene = new ScrollMagic.Scene({
-    triggerElement: '.bcg-parallax',
+    triggerElement: '#ticTacThrones',
     triggerHook: 1,
     duration: '100%'
   })
-  .setTween(TweenMax.from('.bcg',1, {y: '-30%', ease:Power0.easeNone}))
+  .setTween(TweenMax.from('.ticTacThrones-bcg',1, {y: '-80%', ease:Power0.easeNone}))
   .addTo(controller);
 
 });
