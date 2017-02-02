@@ -53,10 +53,16 @@ var ourScene = new ScrollMagic.Scene({
   // parallax scene
   var slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: '#ticTacThrones',
-    triggerHook: 1,
+    triggerHook: 0.2,
     duration: '100%'
   })
-  .setTween(TweenMax.from('.ticTacThrones-bcg',1, {y: '-80%', ease:Power0.easeNone}))
+  .setTween(TweenMax.from('.ticTacThrones-bcg',1, {y: '-40%', ease:Power0.easeNone}))
+  .addIndicators({
+    name: 'TicTacThrones Transition',
+    colorTrigger: 'black',
+    colorStart: '#75C695',
+    colorEnd: 'pink'
+  })
   .addTo(controller);
 
 });
