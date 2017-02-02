@@ -33,11 +33,33 @@ hr {
   min-height: 100vh;
   color: white;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 45vh;
 }
 
 .fullwidth-intro h1 {
   font-size: 4em;
+}
+
+#main-nav {
+  position: absolute;
+  top: 5vh;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+}
+
+#main-nav li {
+  display: inline-block;
+  width: 10vw;
+  color: white;
+}
+
+#main-nav a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .skills {
@@ -71,11 +93,20 @@ hr {
 }
 
 .experience h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .experience h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
+}
+
+.experience p {
+  text-align: left;
+}
+
+.job {
+  height: 40vh;
+  padding-top: 11vh;
 }
 
 .projects {

@@ -1,6 +1,6 @@
 $(function(){
     $("#intro-text").typed({
-        strings: ["Hello, my name is Steve ...", "I am a full stack web developer.","I want to build "],
+        strings: ["Hello, my name is Steve...", "I am a full stack web developer...","I want to build "],
         // typing speed
         typeSpeed: 30,
         // time before typing starts
@@ -13,6 +13,6 @@ $(function(){
         loop: true,
         // false = infinite
         loopCount: false,
-        
+
     });
 });
