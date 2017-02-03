@@ -27,7 +27,9 @@ video {
 
 }
 
-
+.contact-text {
+  line-height: 60%;
+}
 
 hr {
   width: 100%;
@@ -87,6 +89,10 @@ span.underline-white {
   font-size: 4em;
   width: 90%;
 
+}
+
+.intro-text-wrapper {
+  min-height: 30vh;
 }
 
 #main-nav {
@@ -235,10 +241,19 @@ span.underline-white {
 
 .contact {
   padding-top: 12vh;
+  padding-bottom: 12vh;
   text-align: center;
-  min-height: 80vh;
+
   background-color: #262626;
   color: white;
+}
+
+footer {
+  background-color: black;
+  height: 10%;
+  color: white;
+  text-align: center;
+  padding-top: 2%;
 }
 
 
@@ -335,14 +350,63 @@ p {
    ========================================================================== */
 
   @media (max-width: 480px) {
+    #main-nav {
+      position: absolute;
+      vertical-align: middle;
+      text-decoration: none;
+      margin-left: 30vw;
+      list-style: none;
+      width: 40vw;
+      height: 100vh;
+      top: 20vh;
+      text-align: center;
+      color: white;
+      font-size: 1.1em;
+    }
+
+    #main-nav li {
+      display: block;
+      width: 40vw;
+      color: white;
+      padding: 10px;
+    }
+
+    #main-nav a:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    .intro-text-wrapper {
+      display: none;
+    }
+
+    /*.fullwidth-intro {
+      background-color: #ffc600;
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+      padding-top:40vh;
+    }
+
+    .fullwidth-intro h1 {
+      font-size: 2em;
+    }
+
+    .intro-text-wrapper {
+      width: 80vw;
+      min-height: 100vh;
+      padding-left: 0vw;
+      padding-right: 0vw;
+    }*/
+
 
     .slide .wrapper {
-      top: 60%;
+      top: 50%;
       left: 5%;
       padding-right: 5vw;
     }
     .slide .img {
-        top: 46%;
+        top: 36%;
         left: 66%;
         width: 70vw;
         height: 20vh;
