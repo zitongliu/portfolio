@@ -7,11 +7,18 @@
   <title>Steve Liu</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
 <body>
+
+  <!-- ============================================================================ -->
+  <!-- start of full width intro  -->
+  <!-- ============================================================================ -->
+
   <header class="fullwidth-intro">
     <div class="container">
       <h1><span id="intro-text"></span></h1>
@@ -19,6 +26,7 @@
 
     </div>
   </header>
+
   <nav id="main-nav">
     <a href="#about"><li>My Story</li></a>
     <a href="#skills"><li>Skills</li></a>
@@ -27,9 +35,14 @@
     <a href="#education"><li>Education</li></a>
     <a href="#contact"><li>Contact</li></a>
   </nav>
+
+  <!-- ============================================================================ -->
+  <!-- start of about  -->
+  <!-- ============================================================================ -->
+
   <section id="about" class="about">
     <div class="container about-card">
-      <H1>About</H1>
+      <H1><span class="underline-primary">About</span></H1>
       <div class="row">
         <div class="three columns">
           <img class="avatar" src="images/steve2.jpg" alt="Picture of Steve">
@@ -55,9 +68,13 @@
     </div>
   </section>
 
+  <!-- ============================================================================ -->
+  <!-- start of skills  -->
+  <!-- ============================================================================ -->
+
   <section id="skills" class="skills">
     <div class="container">
-      <h1>Skills</h1>
+      <h1><span class="underline-secondary">Skills</span></h1>
       <div class="row">
         <div class="four columns">
           <ul>
@@ -93,20 +110,24 @@
     </div>
   </section>
 
+  <!-- ============================================================================ -->
+  <!-- start of experience -->
+  <!-- ============================================================================ -->
+
   <section id="experience" class="experience">
     <div class="container">
 
-      <h1>Experience</h1>
+      <h1><span class="underline-primary">Experience</span></h1>
       <div class="row job">
         <div class="four columns">
           <h2>Junior Aeronautical Engineer</h2>
           <h3>Precision Autonomy</h3>
-          <h3>Jan 2016 - Current</h3>
+          <h4>Jan 2016 - Current</h4>
         </div>
         <div class="eight columns">
           <p>
             Part of a research and development team responsible for the design, prototype, testing and commercialization of hardware and software for unmanned aerial systems.
-            <br>
+            <br><br>
             Designed software for microcontrollers and sensors. SQL database architecture. Python programming, 3D CAD, data post-processing and analysis with MATLAB.
           </p>
         </div>
@@ -116,12 +137,12 @@
         <div class="four columns">
           <h2>Web Designer</h2>
           <h3>Concise IT Engineering</h3>
-          <h3>Mar 2012 - Oct 2016</h3>
+          <h4>Mar 2012 - Oct 2016</h4>
         </div>
         <div class="eight columns">
           <p>
             Web designer responsible for the design, implementation and maintenance of client websites.
-            <br>
+            <br><br>
             Working knowledge of HTML5, CSS3, Joomla CMS, web/email/domain hosting, SSL certification.
           </p>
         </div>
@@ -131,12 +152,12 @@
         <div class="four columns">
           <h2>Administrative Assistant</h2>
           <h3>Helicopter Transport and Training</h3>
-          <h3>Nov 2015 - Feb 2015</h3>
+          <h4>Nov 2015 - Feb 2015</h4>
         </div>
         <div class="eight columns">
           <p>
             Voluntary work experience at a Helicopter training school. Contributed in the daily operations of the company including administration, reception, customer service, ground operations, and maintenance.
-            <br>
+            <br><br>
             Primary developer responsible for the design and implementation of company website and company booking application.
           </p>
         </div>
@@ -144,75 +165,109 @@
 
     </div>
   </section>
-  <hr>
+  <br>
+  <br>
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <h1>Projects</h1>
-    </div>
-    <article id="ticTacThrones" class="">
-        <div class="ticTacThrones-bcg"></div>
-        <div class="project-content-wrapper">
-          <h2>Tic Tac Thrones</h2>
+
+<!-- ============================================================================ -->
+<!-- start of projects ScrollMagic  -->
+<!-- ============================================================================ -->
+
+<div id="main" class="main-container">
+
+    <!-- <article id="slide00" class="slide">
+        <div class="wrapper">
+            <h1>Projects</h1>
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+        </div>
+    </article> -->
+
+    <article id="slide01" class="slide">
+        <div class="pin-wrapper">
+            <div class="img"></div>
+            <div class="wrapper">
+                <h1>Slacker</h1>
+                <p>Team instant messaging application based on Slack.</p>
+            </div>
         </div>
     </article>
 
-    <div class="container">
-      <div class="row">
-        <div class="four columns project">
-          <h2>Tic Tac Thrones</h2>
-        </div>
-        <div class="four columns project">
-          <h2>Travel Here</h2>
-        </div>
-        <div class="four columns project">
-          <h2>Property App</h2>
+    <article id="slide02" class="slide">
+      <div class="pin-wrapper">
+        <div class="img"></div>
+        <div class="wrapper">
+            <h1>Travel Here</h1>
+            <p>A virtual place to share your travel experiences. Inspired by the Parisan concept of "love-locks". </p>
         </div>
       </div>
-      <div class="row">
-        <div class="four columns project">
-          <h2>Chat App</h2>
-        </div>
-        <div class="four columns project">
-          <h2>Kids With Cancer</h2>
-        </div>
-        <div class="four columns project">
-          <h2>Helicopter Transport & Training</h2>
-        </div>
-        <div class="row">
-          <div class="four columns project">
-            <h2>Empire Contracting</h2>
-          </div>
-          <div class="four columns project">
-            <h2>Reliable Shop Fitting</h2>
-          </div>
-          <div class="four columns project">
-            <h2>CNC Fasteners</h2>
-          </div>
+    </article>
+
+    <article id="slide03" class="slide">
+      <div class="pin-wrapper">
+        <div class="img"></div>
+        <div class="wrapper">
+            <h1>Property App</h1>
+            <p>An app designed to give instant property evaluation based on location and property features.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <hr>
+    </article>
+
+    <article id="slide04" class="slide">
+      <div class="pin-wrapper">
+        <div class="img"></div>
+        <div class="wrapper">
+            <h1>Tic Tac Thrones</h1>
+            <p>Take the throne in Westeros with a game of tic tac toe.</p>
+        </div>
+      </div>
+    </article>
+
+
+</div>
+
+
+<!-- ============================================================================ -->
+<!-- start of education  -->
+<!-- ============================================================================ -->
+
   <section id="education" class="education">
     <div class="container">
-      <h1>Education</h1>
+      <h1><span class="underline-primary">Education</span></h1>
       <h2>General Assembly</h2>
-      <h3>Web Development Immersive OCT 2016 - JAN 2017</h3>
+      <h3>Web Development Immersive</h3>
+      <h4>OCT 2016 - JAN 2017</h4>
       </div>
-
+      <hr>
       <h2>University of Sydney</h2>
       <h3>Bachelor of Engineering (Aeronautical)</h3>
-
+      <h4>2010 - 2015</h4>
     </div>
   </section>
+
+  <!-- ============================================================================ -->
+  <!-- start of contacts  -->
+  <!-- ============================================================================ -->
 
   <section id="contact" class="contact">
     <h1 class="dark">Get in touch</h1>
+    <p>If you're interested in development as well or just want ot grab a coffee, lets talk!</p>
+    <p>Steve Liu</p>
+    <p>Phone: 0422 302 390</p>
+    <p>email: zitongliu7@gmail.com</p>
   </section>
 
+  <!-- ============================================================================ -->
+  <!-- start of footer  -->
+  <!-- ============================================================================ -->
+
+  <footer>
 
   </footer>
+
+
+  <!-- ============================================================================ -->
+  <!-- start of scripts  -->
+  <!-- ============================================================================ -->
 
   <!-- jQuery -->
   <script

@@ -4,8 +4,48 @@
 
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+  font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+body {
+    font-family: Helvetica, Helvetica Neue, Arial;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+
+}
+
+
+
 hr {
   width: 80%;
+}
+
+span.underline-primary {
+  border-bottom: 0.1em solid #ffc600;
+  padding-bottom: 0.1em;
+}
+
+span.underline-secondary {
+  border-bottom: 0.1em solid #262626;
+  padding-bottom: 0.1em;
+}
+
+span.underline-white {
+  border-bottom: 0.1em solid white;
+  padding-bottom: 0.1em;
 }
 
 .typed-cursor{
@@ -40,6 +80,8 @@ hr {
 
 .fullwidth-intro h1 {
   font-size: 4em;
+  width: 90%;
+
 }
 
 #main-nav {
@@ -100,7 +142,7 @@ hr {
   padding-top: 20vh;
   text-align: center;
   min-height: 80vh;
-  color: white;
+  color: #262626;
   background-color: #ffc600;
 }
 
@@ -126,10 +168,16 @@ hr {
 
 .experience h2 {
   font-size: 1.5em;
+  line-height: 80%;
 }
 
 .experience h3 {
   font-size: 1.2em;
+  line-height: 80%;
+}
+.experience h4 {
+  font-size: 1.1em;
+  line-height: 80%;
 }
 
 .experience p {
@@ -138,7 +186,7 @@ hr {
 
 .job {
   height: 40vh;
-  padding-top: 11vh;
+  padding-top: 10vh;
 }
 
 .projects {
@@ -176,74 +224,127 @@ hr {
   font-size: 1.3em;
 }
 
+.education h4 {
+  font-size: 1.1em;
+}
+
 .contact {
   padding-top: 12vh;
   text-align: center;
   min-height: 80vh;
   background-color: #262626;
-}
-
-.light {
-  color: #262626;
-}
-
-.dark {
   color: white;
 }
 
-.bcg-parallax {
-  padding: 150px 0;
-  color: #fff;
-  background-color: #000;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.bcg {
-  background: url('http://www.mrwallpaper.com/wallpapers/Sunset-Art-Background-1920x1080.jpg') no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 140%;
-  top: 0;
-  z-index: 1;
-  opacity: 0.7;
+
+/* ==========================================================================
+   Start of projects scrollmagic
+   ========================================================================== */
+.wrapper {
+    width: 60%;
+    margin-left: 3em;
+
 }
 
-#ticTacThrones {
-  /*padding: 10vh 0;*/
+p {
+  font-size: 16px;
+}
+
+#slide01, #slide03, #slide05 {
+  background-color: #FFFFFF;
+}
+
+#slide00, #slide02, #slide04 {
+  background-color: #EDEDED;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
   height: 100vh;
-  color: #fff;
-  background-color: #000;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+}
+    .slide .pin-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .slide .wrapper {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        padding-right: 18vw;
+    }
+    .slide .img {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        width: 700px;
+        height: 418px;
+        background: url(../images/img_macbook01.png) no-repeat top left;
+        transform: translate(-80%, -40%);
+    }
+
+#slide02 .img {
+  background-image: url(../images/img_macbook02.png);}
+
+#slide03 .img {
+  background-image: url(../images/img_macbook01.png);}
+
+#slide04 .img {
+  background-image: url(../images/img_macbook02.png);}
+
+#slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper {
+  transform: translateY(-100%);
+}
+/*#slide03 .pin-wrapper {
+  transform: translateY(-100%);
+}*/
+.scrollmagic-pin-spacer {
+
+  position: absolute!important;
+  clip: rect(auto auto auto auto);
 }
 
-.ticTacThrones-bcg {
-  background: url('../images/ticTacThrones.png') no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 160%;
-  top: 0;
-  z-index: 1;
-  opacity: 0.7;
+/* =Footer */
+.footer-container {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #06060d;
+}
+.footer-container .wrapper {
+    width: 80%;
+    max-width: none;
+    margin: 0 10%;
+}
+.footer-container h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: normal;
+}
+.footer-container a {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.project-content-wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 10vh;
-  max-width: 1140px;
-  position: relative;
-  z-index: 2;
-}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
-.content-wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1140px;
-  position: relative;
-  z-index: 2;
+@media (max-width: 480px) {
+  .slide .img {
+      position: absolute;
+      top: 35%;
+      left: 70%;
+      width: 80vw;
+      /*height: 418px;*/
+      background: url(../images/img_macbook01.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      /*transform: translate(-80%, -40%);*/
+  }
+  .slide .wrapper {
+      position: absolute;
+      top: 55%;
+      left: 5%;
+  }
 }
