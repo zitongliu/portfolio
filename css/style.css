@@ -337,7 +337,15 @@ p {
   @media (max-width: 480px) {
 
     .slide .wrapper {
-      padding-right: 10%
+      top: 60%;
+      left: 5%;
+      padding-right: 5vw;
     }
-    
+    .slide .img {
+        top: 46%;
+        left: 66%;
+        width: 70vw;
+        height: 20vh;
+        background-size: contain;
+    }
   }
