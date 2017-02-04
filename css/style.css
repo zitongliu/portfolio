@@ -513,6 +513,10 @@ p {
       width: 40vw;
       color: white;
       padding: 10px;
+
+    }
+    #main-nav a {
+      text-decoration: none;
     }
 
     #main-nav a:visited {
