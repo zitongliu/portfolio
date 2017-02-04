@@ -86,6 +86,7 @@ var ourScene = new ScrollMagic.Scene({
   // ===========================================================================
 
 
+
   // Init ScrollMagic
   // var controller = new ScrollMagic.Controller();
   var pinScene00 = new ScrollMagic.Scene({
@@ -130,6 +131,14 @@ var ourScene = new ScrollMagic.Scene({
     duration: '200%'
   })
   .setPin('#slide04 .pin-wrapper')
+  .setTween(
+    // TweenMax.from('.prop1',1, {x: '4%', ease:Power0.easeNone})
+    new TimelineMax().add([
+    TweenMax.from('.prop1',1, {x: '4%', ease:Power0.easeNone}),
+    TweenMax.to('.prop2',1, {x: '20%',y: '-90%', ease:Power0.easeNone})
+  ])
+
+  )
   .addTo(controller);
 
   // Scene 5 - pin the sixth section

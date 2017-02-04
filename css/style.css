@@ -437,6 +437,30 @@ p {
   transform: translateY(-100%);
 }
 
+#slide04 .prop1 {
+  width: 60%;
+  height: 80%;
+  left: 68vw;
+  top: 30%;
+  background-image: url(../images/whitewalker.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#slide04 .prop2 {
+  position: absolute;
+  width: 10%;
+  height: 80%;
+  left: 0%;
+  top: 30%;
+  background-image: url(../images/snowflake.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
 
 .scrollmagic-pin-spacer {
 
