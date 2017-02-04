@@ -53,15 +53,14 @@ var ourScene = new ScrollMagic.Scene({
   triggerHook: 0.3
 })
 .setClassToggle('.about-card', 'transition-about-card') // add class to project01
-.addIndicators({
-  name: 'About Transition',
-  colorTrigger: 'black',
-  colorStart: '#75C695',
-  colorEnd: 'pink'
-}) // this requires a plugin
 .addTo(controller);
 
-
+// .addIndicators({
+//   name: 'About Transition',
+//   colorTrigger: 'black',
+//   colorStart: '#75C695',
+//   colorEnd: 'pink'
+// });
 // ===========================================================================
 //   Start of intro test
 // ===========================================================================

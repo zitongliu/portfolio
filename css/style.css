@@ -302,15 +302,18 @@ p {
         background: url(../images/img_macbook01.png) no-repeat top left;
         transform: translate(-80%, -40%);
     }
+#slide01 .img {
+  background-image: url(../images/slacker2-mac.png);
+}
 
 #slide02 .img {
   background-image: url(../images/img_macbook02.png);}
 
 #slide03 .img {
-  background-image: url(../images/img_macbook01.png);}
+  background-image: url(../images/propertyapp-mac.png);}
 
 #slide04 .img {
-  background-image: url(../images/img_macbook02.png);}
+  background-image: url(../images/tictacthrones-mac.png);}
 
 #slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper {
   transform: translateY(-100%);
