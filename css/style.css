@@ -277,6 +277,51 @@ p {
 #slide00, #slide02, #slide04 {
   background-color: #EDEDED;
 }
+#slide01 {
+  /*background-color: rgb(123,161,131);
+  background-image: -webkit-linear-gradient(top, rgb(123,161,131), rgb(45,76,70));
+  background-image:    -moz-linear-gradient(top, rgb(123,161,131), rgb(45,76,70));
+  background-image:      -o-linear-gradient(top, rgb(123,161,131), rgb(45,76,70));
+  background-image:         linear-gradient(to bottom, rgb(123,161,131), rgb(45,76,70));*/
+
+  /*background-color: #5596c0;
+  background-image: -moz-linear-gradient(top, #095586, #9dd3f7);
+  background-image: -webkit-linear-gradient(top, #095586, #9dd3f7);
+  background-image: -ms-linear-gradient(top, #095586, #9dd3f7);
+  background-image: -o-linear-gradient(top, #095586, #9dd3f7);*/
+}
+
+#slide02 {
+  background: #7696cd;
+  background: -moz-linear-gradient(-45deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #7696cd), color-stop(15%, #8fb2e4), color-stop(33%, #b0cff0), color-stop(69%, #d7e5ec), color-stop(92%, #dee0e7));
+  background: -webkit-linear-gradient(-45deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
+  background: -o-linear-gradient(-45deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
+  background: -ms-linear-gradient(-45deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
+  background: linear-gradient(135deg, #7696cd 0%, #8fb2e4 15%, #b0cff0 33%, #d7e5ec 69%, #dee0e7 92%);
+}
+
+#slide03 {
+
+  /*background: #bccacc;
+  background: -moz-linear-gradient(-45deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #bccacc), color-stop(26%, #c7d8d6), color-stop(54%, #d9ebe0), color-stop(78%, #ebf9e3), color-stop(100%, #f4f8d0));
+  background: -webkit-linear-gradient(-45deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);
+  background: -o-linear-gradient(-45deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);
+  background: -ms-linear-gradient(-45deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);
+  background: linear-gradient(135deg, #bccacc 0%, #c7d8d6 26%, #d9ebe0 54%, #ebf9e3 78%, #f4f8d0 100%);*/
+
+}
+
+#slide04 {
+  background: #95b3bf;
+  background: -moz-linear-gradient(-45deg, #95b3bf 0%, #c6cdd3 35%, #e5d8d9 64%, #f1e1d9 85%, #f3e1cd 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #95b3bf), color-stop(35%, #c6cdd3), color-stop(64%, #e5d8d9), color-stop(85%, #f1e1d9), color-stop(100%, #f3e1cd));
+  background: -webkit-linear-gradient(-45deg, #95b3bf 0%, #c6cdd3 35%, #e5d8d9 64%, #f1e1d9 85%, #f3e1cd 100%);
+  background: -o-linear-gradient(-45deg, #95b3bf 0%, #c6cdd3 35%, #e5d8d9 64%, #f1e1d9 85%, #f3e1cd 100%);
+  background: -ms-linear-gradient(-45deg, #95b3bf 0%, #c6cdd3 35%, #e5d8d9 64%, #f1e1d9 85%, #f3e1cd 100%);
+  background: linear-gradient(135deg, #95b3bf 0%, #c6cdd3 35%, #e5d8d9 64%, #f1e1d9 85%, #f3e1cd 100%);
+}
 
 .slide {
   position: relative;
@@ -307,20 +352,27 @@ p {
 }
 
 #slide02 .img {
-  background-image: url(../images/img_macbook02.png);}
-
+  background-image: url(../images/travelhere-mac.png);
+}
 #slide03 .img {
-  background-image: url(../images/propertyapp-mac.png);}
-
+  background-image: url(../images/propertyapp-mac.png);
+}
 #slide04 .img {
-  background-image: url(../images/tictacthrones-mac.png);}
+  background-image: url(../images/tictacthrones-mac.png);
+}
+#slide05 .img {
+  background-image: url(../images/htt-mac.png);
+}
+#slide06 .img {
+  background-image: url(../images/kwc-mac.png);
+}
 
-#slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper {
+#slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper, #slide05 .pin-wrapper,
+#slide06 .pin-wrapper {
   transform: translateY(-100%);
 }
-/*#slide03 .pin-wrapper {
-  transform: translateY(-100%);
-}*/
+
+
 .scrollmagic-pin-spacer {
 
   position: absolute!important;
