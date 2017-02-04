@@ -1,3 +1,6 @@
+/* ==========================================================================
+   Global properties
+   ========================================================================== */
 * {
   box-sizing: border-box;
   position: relative;
@@ -27,6 +30,14 @@ video {
 
 }
 
+a {
+  color:#262626;
+}
+
+a:hover {
+  color:#ffc600;
+}
+
 .contact-text {
   line-height: 60%;
 }
@@ -54,6 +65,14 @@ span.underline-white {
   border-bottom: 0.15em solid white;
   padding-bottom: 0.1em;
 }
+
+.button2 {
+  z-index: 99;
+}
+
+/* ==========================================================================
+   fullwidth intro
+   ========================================================================== */
 
 .typed-cursor{
     opacity: 1;
@@ -95,6 +114,9 @@ span.underline-white {
   min-height: 30vh;
 }
 
+/* ==========================================================================
+   Nav menu
+   ========================================================================== */
 #main-nav {
   position: absolute;
   top: 5vh;
@@ -117,8 +139,29 @@ span.underline-white {
   color: white;
 }
 
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.avatar {
+ border-radius:50%;
+ width: 90%;
+ padding-top: 10%;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1vw;
+}
+
+
 .about {
-  padding-top: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   text-align: center;
   min-height: 110vh;
   background-color: #262626;
@@ -126,7 +169,7 @@ span.underline-white {
 
 .about-card {
   background-color: white;
-  padding: 3em;
+  padding: 2.5em;
   border: 1px solid gainsboro;
   opacity: 0;
   /*transition: 2s;*/
@@ -148,6 +191,9 @@ span.underline-white {
   transform: rotate(0deg);
 }
 
+/* ==========================================================================
+   Skills Section
+   ========================================================================== */
 
 .skills {
   padding-top: 20vh;
@@ -163,11 +209,12 @@ span.underline-white {
 }
 
 
-.avatar {
-  border-radius:50%;
-  width: 90%;
-  padding-top: 10%;
-}
+
+
+/* ==========================================================================
+   Experience Section
+   ========================================================================== */
+
 
 .experience {
 
@@ -194,11 +241,18 @@ span.underline-white {
 .experience p {
   text-align: left;
 }
+.experience-title {
+  padding-top: 0.5em;
+}
 
 .job {
   height: 40vh;
   padding-top: 10vh;
 }
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
 
 .projects {
   padding-top: 12vh;
@@ -219,7 +273,9 @@ span.underline-white {
   margin-left: 1%
 }
 
-
+/* ==========================================================================
+   Education Section
+   ========================================================================== */
 
 .education {
   padding-top: 12vh;
@@ -239,6 +295,10 @@ span.underline-white {
   font-size: 1.1em;
 }
 
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+
 .contact {
   padding-top: 12vh;
   padding-bottom: 12vh;
@@ -247,6 +307,10 @@ span.underline-white {
   background-color: #262626;
   color: white;
 }
+
+/* ==========================================================================
+   footer Section
+   ========================================================================== */
 
 footer {
   background-color: black;
@@ -289,6 +353,7 @@ p {
   background-image: -webkit-linear-gradient(top, #095586, #9dd3f7);
   background-image: -ms-linear-gradient(top, #095586, #9dd3f7);
   background-image: -o-linear-gradient(top, #095586, #9dd3f7);*/
+
 }
 
 #slide02 {
@@ -344,7 +409,7 @@ p {
         left: 45%;
         width: 700px;
         height: 418px;
-        background: url(../images/img_macbook01.png) no-repeat top left;
+        background: url(../images/off-mac.png) no-repeat top left;
         transform: translate(-80%, -40%);
     }
 #slide01 .img {
@@ -367,7 +432,7 @@ p {
   background-image: url(../images/kwc-mac.png);
 }
 
-#slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper, #slide05 .pin-wrapper,
+#slide01 .pin-wrapper, #slide02 .pin-wrapper, #slide03 .pin-wrapper, #slide04 .pin-wrapper, #slide05 .pin-wrapper,
 #slide06 .pin-wrapper {
   transform: translateY(-100%);
 }
