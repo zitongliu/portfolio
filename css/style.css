@@ -257,7 +257,7 @@ span.underline-white {
 .projects {
   padding-top: 12vh;
   text-align: center;
-  min-height: 80vh;
+  min-height: 0vh;
 }
 
 .projects h2 {
