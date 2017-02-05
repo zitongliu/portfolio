@@ -7,7 +7,7 @@ $(document).ready(function(){
     // ===========================================================================
       $("#intro-text").typed(
         {
-          strings: ["Hi there, I'm Steve.", "I'm a full stack web developer.","I'm interested in new and innovative technologies.", "I want to build products that are... ", "... creative...","... user friendly...", "... and solve real world problems."],
+          strings: ["Hi there, my name is Steve.", "I am a full stack web developer with an aeronautical engineering degree.","I love new and innovative technologies.", "I enjoy building products that are creative... ", "... user friendly, and solve real world problems."],
           // typing speed
           typeSpeed: 20,
           // time before typing starts

@@ -101,17 +101,17 @@ span.underline-white {
   min-height: 100vh;
   color: white;
   text-align: center;
-  padding-top: 42vh;
+  padding-top: 40vh;
 }
 
 .fullwidth-intro h1 {
-  font-size: 4em;
+  font-size: 3em;
   width: 90%;
 
 }
 
 .intro-text-wrapper {
-  min-height: 30vh;
+  min-height: 40vh;
 }
 
 /* ==========================================================================
@@ -265,12 +265,49 @@ span.underline-white {
 }
 
 .project {
-  border: 1px solid gainsboro;
+  font-size: 1em;
+  /*border: 1px solid gainsboro;*/
+  /*width: 80%;*/
   width: 100%;
-  height: 50vh;
-  padding-top: 20%;
-  margin-bottom: 1%;
-  margin-left: 1%
+  height: 130px;
+  padding-top: 30px;
+
+}
+
+.project:hover {
+
+}
+.kwc, .rsf, .empire, .cnc {
+
+
+}
+.kwc {
+  background-image: url(../images/kwc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.rsf {
+  background-image: url(../images/rsf.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.empire {
+  background-image: url(../images/empire.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #363636;
+}
+
+.cnc {
+  background-image: url(../images/cnc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* ==========================================================================
@@ -549,15 +586,20 @@ p {
 
 
     .slide .wrapper {
-      top: 50%;
+      top: 40%;
       left: 5%;
       padding-right: 5vw;
     }
     .slide .img {
-        top: 36%;
+        top: 26%;
         left: 66%;
         width: 70vw;
         height: 20vh;
         background-size: contain;
+    }
+    .htt-content{
+      font-size: 0.7em;
+      padding-right: 0!important;
+      width: 85%;
     }
   }
